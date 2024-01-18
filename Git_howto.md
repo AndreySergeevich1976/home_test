@@ -84,4 +84,5 @@ git branch -d <имя ветки>
 ```
 
 
+
 git --log -oneline graph
