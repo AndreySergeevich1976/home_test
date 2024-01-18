@@ -83,3 +83,9 @@ git branch -d <имя ветки>
 git log --oneline --graph
 ```
 
+Сбросить текущий HEAD в указанное состояние 
+
+```sh
+git reset
+```
+
