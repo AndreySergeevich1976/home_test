@@ -93,3 +93,42 @@ git reset
 ```sh
 git revert <commit>
 ```
+
+# Домашнее задание к уроку №6 _Семинар №3_
+
+## Дополняю файл с инструкцией по работе с Git информацией о командах по работе с удаленными репозиториями.
+
+``` sh
+git clone <url-адрес репозитория>
+```
+ – клонирование внешнего (удаленного) репозитория на локальный ПК. URL-адрес надо скопировать из своего аккаунта на https://github.com/. Это сайт, на котором хранятся удаленные репозитории, или внешние. Если их нет, то их надо создать, нажав "+" рядом с иконкой аккаунта. После создания мы увидим подсказки на сайте. 
+
+1. **Подсказка №1**
+* …or create a new repository on the command line
+* echo "# home_test" >> README.md
+* git init
+* git add README.md
+* git commit -m "first commit"
+* git branch -M main
+* git remote add origin https://github.com/AndreySergeevich1976/home_test.git
+* git push -u origin main
+
+Это совет гитхаба по порядку действий по созданию нового репозитория через терминал. Для того, чтобы просмотреть список настроенных удалённых репозиториев, используется команда 
+```sh
+git remote
+```
+Она выведет названия доступных удалённых репозиториев. Если клонировали репозиторий, то увидим как минимум origin — имя по умолчанию, которое Git даёт серверу, с которого производилось клонирование.
+
+2. **Подсказка №2**
+* …or push an existing repository from the command line
+* git remote add origin https://github.com/AndreySergeevich1976/home_test.git
+* git branch -M main
+* git push -u origin main
+
+Этот совет для того, чтоб уже существующий репозиторий привязать к удаленному репозиторию.
+3. **Подсказка №3**
+* …or import code from another repository
+* You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+* [кнопка import code](https://github.com/ "импортирует код")
+
+ну и третий совет - это импортировать код из другого репозитория. 
